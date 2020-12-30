@@ -1,0 +1,124 @@
+[DEBUG][2020-12-29 17:43:57,356][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] start execution
+[DEBUG][2020-12-29 17:43:57,373][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2020-12-29 17:43:57,394][org.apache.http.client.protocol.RequestAuthCache]Re-using cached 'basic' auth scheme for http://10.0.221.74:9200
+[DEBUG][2020-12-29 17:43:57,397][org.apache.http.client.protocol.RequestAuthCache]No credentials for preemptive authentication
+[DEBUG][2020-12-29 17:43:57,397][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] Request connection for {}->http://10.0.221.74:9200
+[DEBUG][2020-12-29 17:43:57,399][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection request: [route: {}->http://10.0.221.74:9200][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 30]
+[DEBUG][2020-12-29 17:43:57,436][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection leased: [id: http-outgoing-0][route: {}->http://10.0.221.74:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[DEBUG][2020-12-29 17:43:57,438][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+[DEBUG][2020-12-29 17:43:57,439][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+[DEBUG][2020-12-29 17:43:57,439][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][rw:]: Event set [w]
+[DEBUG][2020-12-29 17:43:57,440][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][rw:]: Set timeout 0
+[DEBUG][2020-12-29 17:43:57,440][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE]: Connected
+[DEBUG][2020-12-29 17:43:57,441][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+[DEBUG][2020-12-29 17:43:57,442][org.apache.http.impl.nio.client.InternalHttpAsyncClient]Start connection routing
+[DEBUG][2020-12-29 17:43:57,443][org.apache.http.impl.nio.client.MainClientExec]Connection route established
+[DEBUG][2020-12-29 17:43:57,444][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Attempt 1 to execute request
+[DEBUG][2020-12-29 17:43:57,445][org.apache.http.impl.nio.client.MainClientExec]Target auth state: UNCHALLENGED
+[DEBUG][2020-12-29 17:43:57,446][org.apache.http.impl.nio.client.MainClientExec]Proxy auth state: UNCHALLENGED
+[DEBUG][2020-12-29 17:43:57,447][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][rw:]: Set timeout 30000
+[DEBUG][2020-12-29 17:43:57,447][org.apache.http.headers]http-outgoing-0 >> GET /mess/_doc/1?_source_exclude=message HTTP/1.1
+[DEBUG][2020-12-29 17:43:57,448][org.apache.http.headers]http-outgoing-0 >> Content-Length: 0
+[DEBUG][2020-12-29 17:43:57,448][org.apache.http.headers]http-outgoing-0 >> Host: 10.0.221.74:9200
+[DEBUG][2020-12-29 17:43:57,449][org.apache.http.headers]http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2020-12-29 17:43:57,450][org.apache.http.headers]http-outgoing-0 >> User-Agent: Apache-HttpAsyncClient/4.1.2 (Java/1.8.0_161)
+[DEBUG][2020-12-29 17:43:57,453][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][rw:]: Event set [w]
+[DEBUG][2020-12-29 17:43:57,453][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Request completed
+[DEBUG][2020-12-29 17:43:57,454][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][rw:w]: 179 bytes written
+[DEBUG][2020-12-29 17:43:57,455][org.apache.http.wire]http-outgoing-0 >> "GET /mess/_doc/1?_source_exclude=message HTTP/1.1[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,455][org.apache.http.wire]http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,455][org.apache.http.wire]http-outgoing-0 >> "Host: 10.0.221.74:9200[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,456][org.apache.http.wire]http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,456][org.apache.http.wire]http-outgoing-0 >> "User-Agent: Apache-HttpAsyncClient/4.1.2 (Java/1.8.0_161)[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,456][org.apache.http.wire]http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,456][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE] Request ready
+[DEBUG][2020-12-29 17:43:57,457][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][r:w]: Event cleared [w]
+[DEBUG][2020-12-29 17:43:57,461][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][r:r]: 221 bytes read
+[DEBUG][2020-12-29 17:43:57,462][org.apache.http.wire]http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,462][org.apache.http.wire]http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,462][org.apache.http.wire]http-outgoing-0 << "content-length: 134[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,462][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2020-12-29 17:43:57,463][org.apache.http.wire]http-outgoing-0 << "{"_index":"mess","_type":"_doc","_id":"1","_version":3,"found":true,"_source":{"postDate":"2020-12-29T09:06:04.441Z","user":"kimchy"}}"
+[DEBUG][2020-12-29 17:43:57,469][org.apache.http.headers]http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG][2020-12-29 17:43:57,469][org.apache.http.headers]http-outgoing-0 << content-type: application/json; charset=UTF-8
+[DEBUG][2020-12-29 17:43:57,469][org.apache.http.headers]http-outgoing-0 << content-length: 134
+[DEBUG][2020-12-29 17:43:57,470][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE(134)] Response received
+[DEBUG][2020-12-29 17:43:57,470][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Response received HTTP/1.1 200 OK
+[DEBUG][2020-12-29 17:43:57,474][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE(134)] Input ready
+[DEBUG][2020-12-29 17:43:57,475][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Consume content
+[DEBUG][2020-12-29 17:43:57,476][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] Connection can be kept alive indefinitely
+[DEBUG][2020-12-29 17:43:57,477][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Response processed
+[DEBUG][2020-12-29 17:43:57,478][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] releasing connection
+[DEBUG][2020-12-29 17:43:57,478][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+[DEBUG][2020-12-29 17:43:57,478][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Releasing connection: [id: http-outgoing-0][route: {}->http://10.0.221.74:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[DEBUG][2020-12-29 17:43:57,478][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection [id: http-outgoing-0][route: {}->http://10.0.221.74:9200] can be kept alive indefinitely
+[DEBUG][2020-12-29 17:43:57,479][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][r:r]: Set timeout 0
+[DEBUG][2020-12-29 17:43:57,480][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection released: [id: http-outgoing-0][route: {}->http://10.0.221.74:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[DEBUG][2020-12-29 17:43:57,481][org.elasticsearch.client.RestClient]request [GET http://10.0.221.74:9200/mess/_doc/1?_source_exclude=message] returned [HTTP/1.1 200 OK]
+[DEBUG][2020-12-29 17:43:57,482][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE] [content length: 134; pos: 134; completed: true]
+[DEBUG][2020-12-29 17:43:57,755][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection manager is shutting down
+[DEBUG][2020-12-29 17:43:57,756][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62162<->10.0.221.74:9200[ACTIVE][r:r]: Close
+[DEBUG][2020-12-29 17:43:57,757][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [CLOSING]: Disconnected
+[DEBUG][2020-12-29 17:43:57,764][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection manager shut down
+[DEBUG][2020-12-29 17:44:31,691][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] start execution
+[DEBUG][2020-12-29 17:44:31,708][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2020-12-29 17:44:31,727][org.apache.http.client.protocol.RequestAuthCache]Re-using cached 'basic' auth scheme for http://10.0.221.74:9200
+[DEBUG][2020-12-29 17:44:31,729][org.apache.http.client.protocol.RequestAuthCache]No credentials for preemptive authentication
+[DEBUG][2020-12-29 17:44:31,729][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] Request connection for {}->http://10.0.221.74:9200
+[DEBUG][2020-12-29 17:44:31,732][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection request: [route: {}->http://10.0.221.74:9200][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 30]
+[DEBUG][2020-12-29 17:44:31,780][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection leased: [id: http-outgoing-0][route: {}->http://10.0.221.74:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[DEBUG][2020-12-29 17:44:31,782][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+[DEBUG][2020-12-29 17:44:31,783][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+[DEBUG][2020-12-29 17:44:31,784][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:]: Event set [w]
+[DEBUG][2020-12-29 17:44:31,784][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:]: Set timeout 0
+[DEBUG][2020-12-29 17:44:31,785][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE]: Connected
+[DEBUG][2020-12-29 17:44:31,787][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+[DEBUG][2020-12-29 17:44:31,788][org.apache.http.impl.nio.client.InternalHttpAsyncClient]Start connection routing
+[DEBUG][2020-12-29 17:44:31,790][org.apache.http.impl.nio.client.MainClientExec]Connection route established
+[DEBUG][2020-12-29 17:44:31,791][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Attempt 1 to execute request
+[DEBUG][2020-12-29 17:44:31,793][org.apache.http.impl.nio.client.MainClientExec]Target auth state: UNCHALLENGED
+[DEBUG][2020-12-29 17:44:31,797][org.apache.http.impl.nio.client.MainClientExec]Proxy auth state: UNCHALLENGED
+[DEBUG][2020-12-29 17:44:31,801][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:]: Set timeout 30000
+[DEBUG][2020-12-29 17:44:31,802][org.apache.http.headers]http-outgoing-0 >> GET /mess/_doc/1?_source_exclude=message HTTP/1.1
+[DEBUG][2020-12-29 17:44:31,803][org.apache.http.headers]http-outgoing-0 >> Content-Length: 0
+[DEBUG][2020-12-29 17:44:31,803][org.apache.http.headers]http-outgoing-0 >> Host: 10.0.221.74:9200
+[DEBUG][2020-12-29 17:44:31,804][org.apache.http.headers]http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2020-12-29 17:44:31,804][org.apache.http.headers]http-outgoing-0 >> User-Agent: Apache-HttpAsyncClient/4.1.2 (Java/1.8.0_161)
+[DEBUG][2020-12-29 17:44:31,806][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:]: Event set [w]
+[DEBUG][2020-12-29 17:44:31,807][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Request completed
+[DEBUG][2020-12-29 17:44:31,809][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:w]: 179 bytes written
+[DEBUG][2020-12-29 17:44:31,814][org.apache.http.wire]http-outgoing-0 >> "GET /mess/_doc/1?_source_exclude=message HTTP/1.1[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,814][org.apache.http.wire]http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,814][org.apache.http.wire]http-outgoing-0 >> "Host: 10.0.221.74:9200[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,815][org.apache.http.wire]http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,815][org.apache.http.wire]http-outgoing-0 >> "User-Agent: Apache-HttpAsyncClient/4.1.2 (Java/1.8.0_161)[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,815][org.apache.http.wire]http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,816][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:rw]: 221 bytes read
+[DEBUG][2020-12-29 17:44:31,817][org.apache.http.wire]http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,817][org.apache.http.wire]http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,818][org.apache.http.wire]http-outgoing-0 << "content-length: 134[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,818][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2020-12-29 17:44:31,818][org.apache.http.wire]http-outgoing-0 << "{"_index":"mess","_type":"_doc","_id":"1","_version":3,"found":true,"_source":{"postDate":"2020-12-29T09:06:04.441Z","user":"kimchy"}}"
+[DEBUG][2020-12-29 17:44:31,826][org.apache.http.headers]http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG][2020-12-29 17:44:31,826][org.apache.http.headers]http-outgoing-0 << content-type: application/json; charset=UTF-8
+[DEBUG][2020-12-29 17:44:31,826][org.apache.http.headers]http-outgoing-0 << content-length: 134
+[DEBUG][2020-12-29 17:44:31,827][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE(134)] Response received
+[DEBUG][2020-12-29 17:44:31,827][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Response received HTTP/1.1 200 OK
+[DEBUG][2020-12-29 17:44:31,835][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE(134)] Input ready
+[DEBUG][2020-12-29 17:44:31,835][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Consume content
+[DEBUG][2020-12-29 17:44:31,836][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] Connection can be kept alive indefinitely
+[DEBUG][2020-12-29 17:44:31,839][org.apache.http.impl.nio.client.MainClientExec][exchange: 1] Response processed
+[DEBUG][2020-12-29 17:44:31,839][org.apache.http.impl.nio.client.InternalHttpAsyncClient][exchange: 1] releasing connection
+[DEBUG][2020-12-29 17:44:31,840][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:rw]: Remove attribute http.nio.exchange-handler
+[DEBUG][2020-12-29 17:44:31,841][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Releasing connection: [id: http-outgoing-0][route: {}->http://10.0.221.74:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[DEBUG][2020-12-29 17:44:31,842][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection [id: http-outgoing-0][route: {}->http://10.0.221.74:9200] can be kept alive indefinitely
+[DEBUG][2020-12-29 17:44:31,843][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][rw:rw]: Set timeout 0
+[DEBUG][2020-12-29 17:44:31,844][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection released: [id: http-outgoing-0][route: {}->http://10.0.221.74:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[DEBUG][2020-12-29 17:44:31,847][org.elasticsearch.client.RestClient]request [GET http://10.0.221.74:9200/mess/_doc/1?_source_exclude=message] returned [HTTP/1.1 200 OK]
+[DEBUG][2020-12-29 17:44:31,847][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE] [content length: 134; pos: 134; completed: true]
+[DEBUG][2020-12-29 17:44:31,848][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [ACTIVE] Request ready
+[DEBUG][2020-12-29 17:44:31,849][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][r:rw]: Event cleared [w]
+[DEBUG][2020-12-29 17:44:45,582][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection manager is shutting down
+[DEBUG][2020-12-29 17:44:45,583][org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl]http-outgoing-0 10.1.60.119:62254<->10.0.221.74:9200[ACTIVE][r:rw]: Close
+[DEBUG][2020-12-29 17:44:45,584][org.apache.http.impl.nio.client.InternalIODispatch]http-outgoing-0 [CLOSED]: Disconnected
+[DEBUG][2020-12-29 17:44:45,590][org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager]Connection manager shut down
